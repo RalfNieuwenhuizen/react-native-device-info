@@ -248,6 +248,7 @@ public class RNDeviceModule extends ReactContextBaseJavaModule {
       constants.put("lastUpdateTime", info.lastUpdateTime);
       constants.put("appName", applicationName);
     } catch (PackageManager.NameNotFoundException e) {
+      constants.put("appVersion", "error");
       e.printStackTrace();
     }
 
